@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: #333; overflow: hidden;
+            padding-top: 18px;
+            height: 50px;
+         }
+        
+        a{
+            color: white;
+            text-decoration: none;
+            margin-right: 24px;
+            margin-left: 18px;
+            margin-top: 40px;
+            font-size: medium;
+        }nav{
+            background-color: #333; overflow: hidden;
+            padding-top: 18px;
+            height: 50px;
+         }
+        
+        a{
+            color: white;
+            text-decoration: none;
+            margin-right: 24px;
+            margin-left: 18px;
+            margin-top: 40px;
+            font-size: medium;
+        }
+        .table{
+            border-top: 1px solid black;
+            margin-top: 10px;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Home</a>
+
+        <a href="/about">about</a>
+        
+        <a href="/contact">Contact</a>
+        
+        
+        
+        <a href="/todo">Todo</a>
+
+        
+        </nav>
+        
+        <!-- Page content -->
+        
+        <div class="content">
+        
+       <center> <h1>This Page is showing todo list</h1> </center>
+   
+      <center> <h3> TODO LIST  </h3></center> 
+
+      <center>
+        <div id="todo">
+            <input type="text" id="userInput" style=" width:180px;">
+            <select name="" id="prioritySelector">
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button id="submitTodo">Send</button>
+
+        </div> </center>
+        <center>
+        <table id="todo-item" class="table" cellpadding="10">
+            <tr>
+                <td colspan="2" style=" background-color: green; border-top: 1px solid black; "><center><b>List of the Tasks</b></center></td>
+            </tr>
+        </table></center>
+    </div>
+    <script type="text/javascript" src="./public/script.js"></script>
+        
+</body>
+</html>
